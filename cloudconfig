@@ -1,0 +1,16 @@
+#cloud-config
+apt:
+  primary:
+    - arches: [default]
+      uri: https://download.docker.com/linux/ubuntu
+
+package_update: true
+package_upgrade: true
+packages:
+ - pwgen
+ - apt-transport-https 
+ - ca-certificates
+ - curl
+ - software-properties-common
+ - docker.io
+ - docker-compose
