@@ -1,0 +1,8 @@
+version: "3.3"
+services:
+  product-service:
+    build: ./testapp
+    volumes:
+    - ./testapp /home/app
+    ports:
+    - 5001:80
